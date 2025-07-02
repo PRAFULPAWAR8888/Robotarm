@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.8)
+project(ReadyRoboticArm_1)
+
+# Find ROS 2 and simulation dependencies
+find_package(ament_cmake REQUIRED)
+
+find_package(urdf REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(controller_manager REQUIRED)
+find_package(robot_state_publisher REQUIRED)
+find_package(hardware_interface REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(ros2_control REQUIRED)
+
+# Install all resource directories
+install(DIRECTORY
+  launch
+  urdf
+  config
+  meshes
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()

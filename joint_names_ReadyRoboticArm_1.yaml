@@ -1,0 +1,21 @@
+# Controller to control all primary robot arm joints
+robot_arm_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints:
+    - joint_1
+    - joint_2
+    - joint_3
+    - joint_4
+    - joint_5
+    - gear_joint_1
+    - c_joint_left_1
+    - connected_joint_2_left
+    - grip_joint_3_left
+    - connection_joint_right
+    - grip_joint_2_right
+    - joint_connected_2_right
+
+# Controller to continuously publish joint states to tf and rviz
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50

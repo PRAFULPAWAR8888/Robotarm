@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ReadyRoboticArm_1</name>
+  <version>1.0.0</version>
+  <description>
+    URDF Description package for ReadyRoboticArm_1. This package contains configuration data,
+    3D models, and launch files for simulating and visualizing the robotic arm in Gazebo and RViz.
+  </description>
+
+  <maintainer email="pawarpraful950@gmail.com">Praful</maintainer>
+  <author>Praful</author>
+  <license>BSD</license>
+
+  <!-- Core build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependencies -->
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>controller_manager</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>gazebo_ros</depend>
+  <depend>ros2_control</depend>
+  <depend>hardware_interface</depend>
+  <depend>moveit_simple_controller_manager</depend>
+
+  <!-- Optional GUI tools -->
+  <exec_depend>rviz2</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+    <architecture_independent/>
+  </export>
+</package>
